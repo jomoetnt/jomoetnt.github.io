@@ -1,0 +1,134 @@
+
+body {
+    background-color: rgb(37, 37, 37);
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+.jefHeader {
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    margin:auto;
+}
+
+nav {
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height:8vh;
+    line-height:8vh;
+}
+
+.jefNavLink {
+    background-color: rgb(65, 64, 64);
+    width:100%;
+    text-align: center;
+    margin:auto;
+    color:white;
+    text-decoration:none;
+    border: 1px solid rgb(158, 158, 158);
+}
+
+.jefNavLink:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.jefTitle {
+    align-self: center;
+    justify-self: center;
+    margin:auto;
+    color:white;
+}
+
+.jefVerify {
+    text-align: center;
+    padding-top:5vh;
+    height:60vh;
+}
+
+.jefVerifyContainer {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-items: center;
+    align-content:center;
+}
+
+.jefMontage {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-items: center;
+    align-content:center;
+    padding-top:20px;
+}
+
+.jefCaption {
+    height:50px;
+    margin-top:20px;
+}
+
+footer {
+    width:98vw;
+    height:50px;
+    text-align: center;
+}
+
+.jefContainer {
+  display: flex;
+  flex-direction:column;
+  min-height:100%;
+}
+
+.jefProjects {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width:90vw;
+    padding-left:4vw;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ffffff; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical;
+    color:white;
+    background-color: #5e5e5e;
+}
+
+input[type=submit] {
+    background-color: #535353;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #494949;
+}
+
+.jefForm {
+    margin:auto;
+    width:50%;
+    border-radius: 5px;
+    background-color: #444444;
+    padding: 20px;
+}
+
+.jefSpace {
+    padding-top:30px;
+}
