@@ -1,42 +1,126 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <title>jeffWebsite</title>
+  <title>jeffWebsite - Coding</title>
   <link rel="stylesheet" href="jeffstyle.css">
-  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="icon" type="image/x-icon" href="../logo.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="index.js"></script>
 </head>
 <html>
   <div class="jefContainer">
     <header>
       <div class="jefHeader">
         <div class="jefTitle">
-          <h1>jomoetnt - jeffWebsite - Home</h1>
+          <h1>Portfolio</h1>
         </div>
       </div>
     </header>
-    <nav>
-      <a class="jefNavLink" href="https://jomoetnt.github.io/">Home</a>
-      <a class="jefNavLink" href="https://jomoetnt.github.io/about/">About</a>
-      <a class="jefNavLink" href="https://jomoetnt.github.io/coding/">Coding</a>
-      <a class="jefNavLink" href="https://jomoetnt.github.io/music/">Music</a>
-      <a class="jefNavLink" href="https://jomoetnt.github.io/learning/">Learning</a>
-      <a class="jefNavLink" href="https://jomoetnt.github.io/contact/">Contact</a>
-    </nav>
     <body>
-      <div class="jefVerifyContainer">
-        <div class="jefVerify">
-          <h4>Note</h4>
-          My legal name is not on this site. If you got here from my CV and wish to confirm that the site is mine, check that my first and last name (capitalized and separated by a space) have the MD5 hash <b>914a5aae765d3d103205f898b382a8de</b>.
-        </div>
+      <div class="jefProjects">
+        <section>
+          <h3>jeffVisualizer</h3>
+          Began and finished in 2024 for this webpage. Made in C# with no libraries. It uses the FFT algorithm and some further signal processing to decompose the frequency spectrum of a .wav file, and then visualizes
+          it using bars (like the sorting demonstration). 
+          
+          <div class="jefMontage">
+            <video width="600" height="450" controls>
+              <source src="portfoliovisualized.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            A medley including snippets from songs I have produced. 
+          </div>
+        </section>
+        <section>
+          <a href="https://github.com/jomoetnt/jeffEngine"><h3>jeffEngine</h3> </a>
+          <img src="jeffEngine.png" alt="Tai Lung from Kung Fu Panda and Pingu in front of a blue backdrop." style="width:50%;display:block;margin-left:auto;margin-right:auto;"></img>
+          <div class="jefCaption">
+            A test scene rendered in jeffEngine. The green number in the top left is the current framerate. Note the Phong shading in the backdrop, and the specular highlights on Pingu from Phong illumination.
+          </div>
+          Currently in progress since 2024. A game engine providing both 2D and 3D graphics, audio, networking, and physics processing.
+          It uses the Win32 and Direct3D 11 APIs to leverage GPU hardware acceleration. The 3D graphics are the main focus, using Phong illumination and shading algorithms, but
+          physically-based rendering is planned. Programmed in C++20, with High Level Shading Language (HLSL) Model 5.0 as well where relevant. 
+        </section>
+        <section>
+          <h3>ChatApp</h3>
+          Peer-to-peer networking demonstration written in C that makes use of UDP hole punching for network address translation (NAT) traversal. 
+        </section>
+        <section>
+          <a href="https://github.com/jomoetnt/Balkken"><h3>Balkken</h3> </a>
+          <img src="Balkken.png" alt="Killer Bean in a fighting stance against himself." style="width:50%;display:block;margin-left:auto;margin-right:auto;"></img>
+          <div class="jefCaption">
+            Gameplay in Balkken looks something like this. 
+          </div>
+          A traditional fighting game with many non-original characters. Made in Godot with GDScript.
+        </section>
+        <section>
+          <h3>autoluka</h3>
+          <img src="autoluka.gif" alt="Icon lighting up when someone is talking." style="width:10%;display:block;margin-left:auto;margin-right:auto;"></img>
+          <div class="jefCaption">
+            Demonstration of the program's output with one speaker, converted to a looping GIF. At a rendering speed of 3200 frames per second, it would take only a few seconds to produce an hour-long video. The required inputs in this case would be one
+            audio file, one image for silence, and one image for talking (or any other noise that reaches the threshold).
+          </div>
+          Made for podcasting in 2024, it creates a video that visually indicates when certain people are talking (like on Discord, but with customizable images). It does require separate tracks for each speaker to be able to detect spikes in loudness,
+          however the audio analyzer (which also reads the input files) was programmed entirely from scratch in C without external libraries. The final assembler was written in Python and uses FFmpeg to encode the output video.
+        </section>
+        <section>
+          <h3>wikibook</h3>
+          <audio controls style="width:40%;display:block;margin-left:auto;margin-right:auto;">
+            <source src="Chemical element.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <div class="jefCaption">
+            An audiobook generated by the extension. The Wikipedia article named "Chemical element" was used as an example.
+          </div>
+          A chrome extension made in 2023 that turns Wikipedia articles into audiobooks with the click of a button. The extension itself was written in JavaScript, and it interfaces with a separate desktop app written in Python
+          in order to leverage GPU power for the AI text-to-speech. 
+        </section>
+        <section>
+          <h3>jefsort</h3>
+          <img src="sort.gif" alt="Various sorting algorithms visualized." style="width:25%;display:block;margin-left:auto;margin-right:auto;"></img>
+          <div class="jefCaption">
+            The Java version of jefsort. In order, the algorithms are bubble sort, insertion sort, quicksort, and counting sort.
+          </div>
+          A visualized demonstration of various sorting algorithms written in 2022 using C#. I also made different versions in Java and C++, which included the following algorithms: bubble sort,
+          insertion sort, quicksort, counting sort, and bogosort.
+        </section>
+        <section>
+          <h3>jeffbrain</h3>
+          <img src="jefbrain.gif" alt="Neural network learning to navigate a simple maze." style="width:25%;display:block;margin-left:auto;margin-right:auto;"></img>
+          <div class="jefCaption">
+            Training in progress (~20 seconds played at 2.5x speed). Notice how over time, the AI learns to move to the right.
+          </div>
+          Began in 2020. A basic neural network written in C# that navigates a maze, trained using a genetic algorithm with backpropagation and gradient descent. The goal was to have it navigate any maze, 
+          even if it had never seen it before, which a basic neural network would suffice for. It could also be trained on the CPU due to a low number of neurons.
+        </section>
+        <section>
+          <h3>Arbitrary</h3>
+          <img src="arbitrary.png" alt="Virtual synthesizer graphical user interface." style="width:40%;display:block;margin-left:auto;margin-right:auto;"></img>
+          <div class="jefCaption">
+            How the program appears in a digital audio workspace.
+          </div>
+          <audio controls style="width:40%;display:block;margin-left:auto;margin-right:auto;">
+            <source src="ArbitraryDemonstration2021.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <div class="jefCaption">
+            An example song snippet to demonstrate Arbitrary's capabilities.
+          </div>
+          Made in 2021 using C++, it makes use of the JUCE framework to create a functioning subtractive synthesizer, available as a VST2/VST3 plugin.
+          The waveforms that it can generate using its main oscillator are the typical analog ones along with a white noise generator. It has low-pass, band-pass, and high-pass filters with adjustable cutoff frequency and resonance.
+          It also has an amplitude envelope.
+        </section>
+        <section>
+          <h3>Ear Trainer</h3>
+          Written in 2020 using C#, it provides an ear-training regimen which aims to improve both the relative pitch and absolute (often called "perfect") pitch. It uses the NAudio library for MIDI output to Windows, which uses the default
+          sound, typically a piano.
+        </section>
       </div>
     </body>
     <footer>
-      <div class="jefFooter">
+      <p>
         Updated as of November 23 2024.
-      </div>
+      </p>
     </footer>
   </div>
 </html>
